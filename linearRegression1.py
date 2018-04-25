@@ -25,7 +25,7 @@ print(train.values[119,2:5])
 print('True:',train.values[119,1])
 print(dot(np.mat(theta[1:4]).reshape(1,3),train.values[119,2:5].T)+theta[0])
 
-#testing
+#Testing
 print('---------------------------')
 print('Testing')
 X_test = np.ones([len(test),4])
