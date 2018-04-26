@@ -4,12 +4,11 @@ from numpy import dot
 
 #read in the dataset
 dataset = pd.read_csv('./data/data.csv')
-print(dataset)
 temp = dataset.iloc[:, 2:5]
 temp['x0'] = 1
-print(temp)
 X = temp.iloc[:, [3, 0, 1, 2]]
 Y = dataset.iloc[:, 1].values.reshape(150, 1)
+
 
 #Gradient Descent
 #initial parameters and learning rate
